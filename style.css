@@ -8,22 +8,8 @@ body {
 
 .container {
     width: 95%;
+    max-width: 1400px;
     margin: 0 auto;
-}
-
-
-/* Logo alineado a la izquierda */
-.logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.logo img {
-    width: 110px;
-    height: 110px;
-    margin-right: 5px;
 }
 
 /* Header */
@@ -31,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 20px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -39,11 +25,7 @@ header {
     z-index: 1000;
     border-radius: 15px;
     width: 100%;
-    max-width: 1400px;
-    height: 74px;
-    margin: 0 auto;
 }
-
 
 /* Logo */
 .logo {
@@ -53,27 +35,19 @@ header {
     font-size: 18px;
 }
 
-.logo svg {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
 }
 
-/* Menú*/
-nav {
-    margin-left: auto;
-}
-
+/* Menú */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     padding: 0;
     margin: 0;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
@@ -87,17 +61,16 @@ nav ul li a:hover {
     color: #ff8c00;
 }
 
-/* Botón Contacto*/
+/* Botón Contacto */
 .quote-btn {
     background: #ff8c00;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s ease;
-    margin-left: 20px;
 }
 
 .quote-btn:hover {
@@ -109,97 +82,100 @@ nav ul li a:hover {
     background: url('IMG/pixelcut-export.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 250px 30px;
+    padding: 150px 20px;
     border-radius: 10px;
     margin-top: 20px;
 }
 
 .hero h1 {
-    text-align: center;
-    font-size: 46px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 16px;
 }
 
-.Mision h1{
-    text-align: left;
-    font-size: 30px;
-    font-weight: bold;
+/* Misión */
+.Mision h1 {
+    font-size: 28px;
 }
 
-.Mision p{
-    text-align: left;
-    font-size: 17px;
-    margin-top: 10px;
+.Mision p {
+    font-size: 16px;
     color: #414141;
 }
 
-/* Galeria */
+/* Galería */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
 }
 
 .image {
-    height: 200px;
+    height: 180px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
 }
 
 /* Sección de contenido */
-.content-section {
-    margin-top: 40px;
-}
-
 .content-section h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 26px;
 }
 
 .content-section p {
-    font-size: 16px;
+    font-size: 15px;
     color: #666;
 }
 
 .contenido {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-/* Imagen alineada a la izquierda */
 .contenido .image {
-    flex: 0.7;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    background-image: url("https://cdn.usegalileo.ai/sdxl10/0df7f342-b1d5-47ec-b9ad-0f8feff49d66.png");
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
 }
 
-/* Texto alineado a la derecha */
 .contenido .texto {
-    flex: 1;
-    text-align: left;
+    text-align: center;
 }
 
-.contenido h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
 
-.contenido p {
-    font-size: 16px;
-    color: #414141;
-}
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
+    .hero {
+        padding: 100px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .contenido .image {
+        height: 250px;
+    }
+}
