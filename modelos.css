@@ -5,34 +5,17 @@ body {
     background-color: #c7c7c7;
 }
 
-.logo img {
-    width: 110px;
-    height: 110px;
-    margin-right: 5px;
-}
-
+/* Contenedor principal */
 .container {
     width: 95%;
-    max-width: 100%;  
+    max-width: 1200px;  
     margin: 0 auto;
 }
-.quote-btn {
-    background: #ff8c00;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3sease;
-    margin-left: 20px;
-}
 
-/* Estilos cuando el ratón pasa por encima del botón */
-.quote-btn:hover {
-    background: white;
-    color: #ff8c00; 
-    transform: scale(1.1); 
+/* LOGO */
+.logo img {
+    width: 90px;
+    height: 90px;
 }
 
 /* HEADER */
@@ -40,7 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    flex-wrap: wrap; /* Evita que los elementos se desborden */
+    padding: 10px 20px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -49,36 +33,23 @@ header {
     border-radius: 15px;
     width: 100%;
     max-width: 1400px;
-    height: 74px;
     margin: 0 auto;
 }
 
-.boton-contacto {
-    background: #ff8c00; 
-    color: white;
-    padding: 12px 24px;
-    border: 2px solid #ff8c00;
-    border-radius: 6px; 
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.boton-contacto:hover {
-    background: white;
-    color: #ff8c00;
-}
-
 /* MENÚ */
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Evita desbordes */
 }
 
 nav ul li {
@@ -96,7 +67,7 @@ nav ul li a:hover {
     color: #ff8c00;
 }
 
-/* BOTÓN DE CONTACTO*/
+/* BOTÓN DE CONTACTO */
 .boton-contacto {
     background: #ff8c00;
     color: white;
@@ -105,16 +76,36 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se divida */
 }
 
 .boton-contacto:hover {
     background: #e67e00;
 }
 
-/* ESTILOS PARA LOS MODELOS */
+/* BOTÓN COTIZACIÓN */
+.quote-btn {
+    background: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-left: 20px;
+}
+
+.quote-btn:hover {
+    background: white;
+    color: #ff8c00; 
+    transform: scale(1.1); 
+}
+
+/* CONTENEDOR PRINCIPAL */
 main, .modelos {
     width: 95%;
-    max-width: 100%;  
+    max-width: 1200px;  
     margin: 0 auto;
 }
 
@@ -123,6 +114,7 @@ main h1 {
     font-weight: bold;
 }
 
+/* MODELOS */
 .modelos {
     display: flex;
     gap: 20px;
@@ -137,6 +129,7 @@ main h1 {
     border-radius: 10px;
     text-align: center;
     width: 22%; 
+    min-width: 250px;
     height: 380px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -202,6 +195,29 @@ main h1 {
 }
 
 /* MEDIA QUERIES - Ajustes para dispositivos móviles */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .boton-contacto {
+        margin-top: 10px;
+        padding: 10px 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .modelos {
         flex-direction: column;  
@@ -217,10 +233,25 @@ main h1 {
     .imagen-container {
         height: 200px; 
     }
+
+    .boton-contacto {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
 }
 
 @media (max-width: 480px) {
     .modelo {
         width: 100%; 
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .boton-contacto {
+        font-size: 13px;
+        padding: 6px 12px;
     }
 }
