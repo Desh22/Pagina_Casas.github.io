@@ -1,23 +1,21 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #c7c7c7;
 }
 
+/* Contenedor principal */
 .container {
     width: 95%;
-    max-width: 1400px;
+    max-width: 1200px;  
     margin: 0 auto;
 }
 
-body {
-    background-color: #c7c7c7;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+/* LOGO */
+.logo img {
+    width: 90px;
+    height: 90px;
 }
 
 /* HEADER */
@@ -25,7 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    flex-wrap: wrap; /* Evita que los elementos se desborden */
+    padding: 10px 20px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -33,29 +32,24 @@ header {
     z-index: 1000;
     border-radius: 15px;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* LOGO */
-.logo {
+/* MENU */
+nav {
+    flex-grow: 1;
     display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
+    justify-content: center;
 }
 
-.logo img {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-/* MENÚ */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Evita desbordes */
 }
 
 nav ul li {
@@ -71,6 +65,23 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff8c00;
+}
+
+
+/* BOTÓN DE CONTACTO */
+.boton-contacto {
+    background: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se divida */
+}
+
+.boton-contacto:hover {
+    background: #e67e00;
 }
 
 /* BOTÓN contacto */
@@ -97,10 +108,11 @@ nav ul li a:hover {
     background: url('IMG/WhatsApp\ Image\ 2025-02-13\ at\ 5.06.50\ PM.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 150px 20px;
+    padding: 80px 20px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
+    max-width: 1200px;
 }
 
 .hero h1 {
@@ -134,6 +146,7 @@ nav ul li a:hover {
     text-align: center;
     margin: 50px auto;
     width: 100%;
+    max-width: 1200px;
 }
 
 .gallery h1 {
@@ -147,16 +160,16 @@ nav ul li a:hover {
 .gallery-images {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .gallery .image {
     width: 30%;
-    height: 180px;
+    height: 260px;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -165,27 +178,80 @@ nav ul li a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* OPINIONES */
+.opiniones {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.opiniones h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.opinion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.opinion img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.opinion h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.fecha {
+    color: gray;
+    font-size: 14px;
+}
+
+.estrellas {
+    color: gold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.opinion div {
+    text-align: left;
+}
+
 /* RESPONSIVE DESIGN */
+/* Tablets */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 10px 15px;
     }
 
     .logo img {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 
     nav ul {
-        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
+    .quote-btn {
+        margin-top: 10px;
+    }
+
     .hero {
-        padding: 100px 15px;
+        padding: 60px 15px;
     }
 
     .hero h1 {
@@ -194,13 +260,39 @@ nav ul li a:hover {
 
     .gallery .image {
         width: 45%;
-        height: 160px;
+        height: 220px;
+    }
+
+    .opinion {
+        align-items: center;
+        text-align: center;
+    }
+
+    .opinion div {
+        text-align: center;
     }
 }
 
+/* Celulares */
 @media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .quote-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        border-radius: 15px;
+    }
+
     .hero {
-        padding: 80px 10px;
+        padding: 40px 10px;
     }
 
     .hero h1 {
@@ -209,6 +301,10 @@ nav ul li a:hover {
 
     .gallery .image {
         width: 100%;
-        height: 150px;
+        height: 200px;
+    }
+
+    .opinion {
+        padding: 15px;
     }
 }
