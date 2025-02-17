@@ -1,0 +1,213 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7c7c7;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 15px;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+}
+
+/* Menú */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+}
+
+/* Botón Contacto */
+.quote-btn {
+    background: #ff8c00;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.quote-btn:hover {
+    background: #e07b00;
+}
+
+/* Sección de Contacto */
+.contacto {
+    background: #ff8c00c9; /* Naranja */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 95%; /* Ahora coincide con el header */
+    max-width: 1400px; /* Igual al header */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contact-container {
+    max-width: 1200px; /* Ajustar al tamaño del menú superior */
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contacto p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.contact-avatar {
+    width: 250px; /* Tamaño más pequeño */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.contacto .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.contacto .social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.contacto .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.contacto .contact-btn {
+    display: inline-block;
+    background: white;
+    color: #ff8c00;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto .contact-btn:hover {
+    background: #e07b00;
+    color: white;
+}
+
+/* Galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 100px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .contenido .image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modelo {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .boton-contacto {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
