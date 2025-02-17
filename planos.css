@@ -1,14 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-.logo img {
-    width: 110px;
-    height: 110px;
-    margin-right: 5px;
 }
 
 body {
@@ -16,21 +10,16 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Contenedor principal */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* HEADER  */
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 20px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -38,12 +27,11 @@ header {
     z-index: 1000;
     border-radius: 15px;
     width: 100%;
-    max-width: 1400px;
-    height: 74px;
-    margin: 0 auto;
+    max-width: 1200px;
+    height: auto;
 }
 
-/* LOGO Y MENÚ */
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
@@ -51,18 +39,23 @@ header {
     font-size: 20px;
 }
 
-.logo svg {
-    width: 35px;
-    height: 35px;
+.logo img {
+    width: 90px;
+    height: 90px;
     margin-right: 10px;
 }
 
+/* MENÚ */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
     padding: 0;
     margin: 0;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
@@ -76,42 +69,44 @@ nav ul li a:hover {
     color: #ff8c00;
 }
 
-/* BOTÓN DE Contacto */
+/* BOTÓN DE CONTACTO */
 .quote-btn {
     background: #ff8c00;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: none; /* Elimina cualquier borde */
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s ease;
-    margin-left: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    outline: none; /* Evita el borde de enfoque */
+    box-shadow: none; /* Elimina sombras */
 }
 
 .quote-btn:hover {
     background: #e07b00;
+    transform: scale(1.05);
 }
 
 /* HERO */
 .hero {
-    background: url('IMG/WhatsApp\ Image\ 2025-02-16\ at\ 3.22.58\ PM.jpeg') center/cover no-repeat;
+    background: url('IMG/WhatsApp\ Image\ 2025-02-13\ at\ 5.06.50\ PM.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 80px 40px;
+    padding: 80px 20px;
     border-radius: 15px;
     margin-top: 50px;
-    position: relative;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .hero h1 {
-    font-size: 42px;
-    font-weight: bold;
+    font-size: 36px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .btn-planos {
@@ -131,10 +126,12 @@ nav ul li a:hover {
     background: #e67e00;
 }
 
-/* GALERiA */
+/* GALERÍA */
 .gallery {
     text-align: center;
     margin: 50px auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .gallery h1 {
@@ -145,15 +142,13 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-/* Contenedor de imágenes */
 .gallery-images {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
-/* Estilos de cada imagen */
 .gallery .image {
     width: 30%;
     height: 260px;
@@ -163,7 +158,6 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto al pasar el mouse */
 .gallery .image:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -172,6 +166,7 @@ nav ul li a:hover {
 /* OPINIONES */
 .opiniones {
     width: 100%;
+    max-width: 1200px;
     margin: 50px auto;
     text-align: center;
 }
@@ -219,19 +214,40 @@ nav ul li a:hover {
 }
 
 /* RESPONSIVE DESIGN */
-/* Para tablets */
+/* Tablets */
 @media (max-width: 768px) {
-    .gallery .image {
-        width: 45%;
-        height: 220px;
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quote-btn {
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 60px 15px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
-    .hero p {
-        font-size: 16px;
+    .gallery .image {
+        width: 45%;
+        height: 220px;
     }
 
     .opinion {
@@ -245,32 +261,38 @@ nav ul li a:hover {
     }
 }
 
-/* Para Celulares */
+/* Celulares */
 @media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .quote-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
     .gallery .image {
         width: 100%;
         height: 200px;
     }
 
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .menuSuperior ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .quote-btn {
-        margin-left: 0;
+    .opinion {
+        padding: 15px;
     }
 }
