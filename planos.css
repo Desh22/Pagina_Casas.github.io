@@ -75,7 +75,23 @@ nav ul li a:hover {
     color: #ff8c00;
 }
 
-/* BOTÓN CONTACTO */
+/* BOTÓN DE CONTACTO */
+.boton-contacto {
+    background: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se divida */
+}
+
+.boton-contacto:hover {
+    background: #e67e00;
+}
+
+/* BOTÓN COTIZACIÓN */
 .quote-btn {
     background: #ff8c00;
     color: white;
@@ -86,11 +102,12 @@ nav ul li a:hover {
     font-weight: bold;
     transition: background 0.3s ease;
     margin-left: 20px;
-    box-shadow: none; /* Elimina borde negro */
 }
 
 .quote-btn:hover {
-    background: #e07b00;
+    background: white;
+    color: #ff8c00; 
+    transform: scale(1.1); 
 }
 
 /* HERO */
