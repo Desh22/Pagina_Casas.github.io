@@ -1,0 +1,205 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7c7c7;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* Logo alineado a la izquierda */
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo img {
+    width: 110px;
+    height: 110px;
+    margin-right: 5px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1400px;
+    height: 74px;
+    margin: 0 auto;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Menú*/
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff8c00;
+}
+
+/* Botón Contacto*/
+.quote-btn {
+    background: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-left: 20px;
+}
+
+.quote-btn:hover {
+    background: #e07b00;
+}
+
+/* Hero */
+.hero {
+    background: url('IMG/pixelcut-export.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 250px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.Mision h1{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Mision p{
+    text-align: left;
+    font-size: 17px;
+    margin-top: 10px;
+    color: #414141;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Sección de contenido */
+.content-section {
+    margin-top: 40px;
+}
+
+.content-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Imagen alineada a la izquierda */
+.contenido .image {
+    flex: 0.7;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-image: url("https://cdn.usegalileo.ai/sdxl10/0df7f342-b1d5-47ec-b9ad-0f8feff49d66.png");
+}
+
+/* Texto alineado a la derecha */
+.contenido .texto {
+    flex: 1;
+    text-align: left;
+}
+
+.contenido h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contenido p {
+    font-size: 16px;
+    color: #414141;
+}
+

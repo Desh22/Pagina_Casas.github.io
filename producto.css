@@ -1,0 +1,50 @@
+/* Sección de detalles */
+.details {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Tabla de detalles */
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white; /* Fondo completamente blanco */
+    color: black; /* Texto negro */
+}
+
+.details th, .details td {
+    padding: 12px;
+    border-bottom: 1px solid white; /* Sin borde visible */
+    text-align: left;
+}
+
+.details th {
+    background-color: #f0f0f0; /* Fondo gris claro para los encabezados */
+    font-weight: bold;
+}
+
+/* Botón "Ver Planos" */
+.btn-planos {
+    background-color: orange;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.btn-planos:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
