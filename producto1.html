@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,74 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Bella</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
-    <link rel="stylesheet" href="producto.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="container">
-        <br>
+    <div class="container mx-auto p-4">
         <header>
             <div class="logo">
-                <img src="IMG/Captura_de_pantalla_2025-02-16_141630-removebg-preview.png" alt="Logo" width="48" height="48">
+                <img src="IMG/Captura_de_pantalla_2025-02-16_141630-removebg-preview.png" alt="Logo de la empresa">
             </div>
-            <nav>
+            <nav class="menuSuperior">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="modelos.html">Modelos</a></li>
-                    <li><a href="planos.html">Galeria</a></li>
-                    <li><a href="#">Más</a></li>
+                    <li><a href="planos.html">Galería</a></li>
                 </ul>
             </nav>
-            <button class="quote-btn">Contacto</button>
+            <button onclick="window.location.href='Contacto.html';" class="quote-btn">Contacto</button>
         </header>
-        <main>
-            <section class="hero">
-                <h1>Modelo 1</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="modelos.html">
-                    <button class="btn-planos">Ver planos</button>
-                </a>
-            </section>
+        <br>
 
-            <div class="details">
-                <h1>Detalles</h1>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="video-container">
+                <iframe class="w-full h-64 md:h-80 rounded-lg" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="details bg-white p-6 rounded-lg shadow-md">
+                <h1 class="text-2xl font-bold mb-4">Kit Inicial</h1>
+                <ul class="text-gray-700 list-disc pl-5 space-y-2">
+                    <li>Estructura de pino 2"x3" en paneles interiores y exteriores.</li>
+                    <li>Casa completa en madera de primera selección.</li>
+                    <li>Paneles perimetrales revestidos con tinglado.</li>
+                    <li>Tabiques interiores de madera.</li>
+                    <li>Cerchas simples en madera de primera.</li>
+                    <li>Incluye barrera de vapor.</li>
+                    <li>Costaneras de madera de primera.</li>
+                    <li>Planchas de cubierta acanaladas de acero.</li>
+                    <li>Caballetes de Zinc para cumbrera y limahoya.</li>
+                </ul>
                 <br>
-                <table>
-                    <tr>
-                        <th>Modelo</th>
-                        <td><strong>Modelo 1</strong></td>
-                    </tr>
-                    <tr>
-                        <th>Madera</th>
-                        <td>..</td>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <td>...</td>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <td>...</td>
-                    </tr>
-                    <tr>
-                        <th>Precio</th>
-                        <td><strong>$</strong></td>
-                    </tr>
-                </table>
+            <button onclick="window.location.href='IMG/ModeloDePrueba.pdf';" class="quote-btn">Descargar ficha técnica</button>
             </div>
-            <div class="gallery">
-                <img src="IMG/pixelcut-export.jpg" alt="Casa 1">
-                <img src="https://cdn.usegalileo.ai/sdxl10/7c50ed7e-9f99-4db8-a51b-a1a1e7c8adbe.png" alt="Casa 2">
-                <img src="https://cdn.usegalileo.ai/sdxl10/f3c675b6-a6dc-4bc1-8d21-eece2435a130.png" alt="Casa 3">
-                <img src="https://cdn.usegalileo.ai/sdxl10/504e7229-3f33-42f0-bd28-38989c895510.png" alt="Casa 4">
-                <img src="https://cdn.usegalileo.ai/sdxl10/049a67c5-6d9c-4ce1-98fb-c9f1399f2f13.png" alt="Casa 5">
-            </div>
-            <br>
+            
+            
         </main>
+
+        <section class="gallery">
+            <img src="IMG/pixelcut-export.jpg" alt="Casa 1" class="rounded-lg shadow-md">
+            <img src="https://cdn.usegalileo.ai/sdxl10/7c50ed7e-9f99-4db8-a51b-a1a1e7c8adbe.png" alt="Casa 2" class="rounded-lg shadow-md">
+            <img src="https://cdn.usegalileo.ai/sdxl10/f3c675b6-a6dc-4bc1-8d21-eece2435a130.png" alt="Casa 3" class="rounded-lg shadow-md">
+            <img src="https://cdn.usegalileo.ai/sdxl10/504e7229-3f33-42f0-bd28-38989c895510.png" alt="Casa 4" class="rounded-lg shadow-md">
+            <img src="https://cdn.usegalileo.ai/sdxl10/049a67c5-6d9c-4ce1-98fb-c9f1399f2f13.png" alt="Casa 5" class="rounded-lg shadow-md">
+        </section>
     </div>
-    <script src="script.js"></script>
 </body>
+<script src="https://cdn.tailwindcss.com"></script>
+
 
 </html>
