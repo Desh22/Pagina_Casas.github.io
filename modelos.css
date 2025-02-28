@@ -215,6 +215,39 @@ main h1 {
     color: gray;
 }
 
+/* footer */
+.footer {
+    background: #acacac;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .dev {
+    font-weight: bold;
+    color: #ff8c00;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.footer .logo-db {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 5px; 
+}
+
+.footer .logo-db:hover {
+    transform: scale(1.2);
+}
+
+
 /* MEDIA QUERIES - Ajustes para dispositivos móviles */
 @media (max-width: 1024px) {
     header {
