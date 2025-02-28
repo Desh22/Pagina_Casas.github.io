@@ -80,7 +80,7 @@ nav ul li a:hover {
     color: #ff8c00;
 }
 
-/* BOTON DE CONTACTO */
+/* BOTÓN DE CONTACTO */
 .boton-contacto {
     background: #ff8c00;
     color: white;
@@ -96,7 +96,7 @@ nav ul li a:hover {
     background: #e67e00;
 }
 
-/* BOTON contacto */
+/* BOTÓN contacto */
 .quote-btn {
     background: #ff8c00;
     color: white;
@@ -134,7 +134,7 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-/* Mision */
+/* Misión */
 .Mision h1 {
     font-size: 28px;
 }
@@ -144,7 +144,7 @@ nav ul li a:hover {
     color: #414141;
 }
 
-/* Galeria */
+/* Galería */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -159,7 +159,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-/* Seccion de contenido */
+/* Sección de contenido */
 .contenido {
     display: flex;
     flex-direction: row;
@@ -183,7 +183,7 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-/* footer */
+
 .footer {
     background: #acacac;
     color: #333;
@@ -201,14 +201,14 @@ nav ul li a:hover {
     color: #ff8c00;
     display: flex;
     align-items: center;
-    gap: 5px; 
+    gap: 5px; /* Asegura la separación adecuada entre texto y logo */
 }
 
 .footer .logo-db {
     width: 24px;
     height: 24px;
     transition: transform 0.3s ease-in-out;
-    margin-left: 5px; 
+    margin-left: 5px; /* Alinea el logo a la derecha del texto */
 }
 
 .footer .logo-db:hover {
@@ -253,3 +253,4 @@ nav ul li a:hover {
         padding: 6px 12px;
     }
 }
+
