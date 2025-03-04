@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria - TuCasaYa</title>
+    <title>Planos - Casa Moderna</title>
     <link rel="stylesheet" href="galeria.css">
     <!-- Start of Async Callbell Code -->
 <script>
@@ -21,6 +21,13 @@
   
     
 </head>
+
+<!-- Modal para imágenes -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
 
 <body>
     <div class="container">
@@ -52,31 +59,32 @@
             <section class="gallery">
                 <h1>Galeria</h1>
                 <div class="gallery-images">
-                    <div class="image" style='background-image: url("IMG/WhatsApp\ Image\ 2025-02-13\ at\ 5.06.50\ PM.jpeg");'></div>
-                    <div class="image" style='background-image: url("IMG/WhatsApp\ Image\ 2025-02-16\ at\ 3.15.50\ PM.jpeg");'></div>
-                    <div class="image" style='background-image: url("IMG/WhatsApp\ Image\ 2025-02-16\ at\ 3.29.41\ PM.jpeg");'></div>
+                    <div class="image" style='background-image: url("IMG/modelo50m2_a.jpeg");' onclick="openModal('IMG/modelo50m2_a.jpeg')"></div>
+                    <div class="image" style='background-image: url("IMG/WhatsApp Image 2025-02-16 at 3.15.50 PM.jpeg");' onclick="openModal('IMG/WhatsApp Image 2025-02-16 at 3.15.50 PM.jpeg')"></div>
+                    <div class="image" style='background-image: url("IMG/WhatsApp Image 2025-02-16 at 3.29.41 PM.jpeg");' onclick="openModal('IMG/WhatsApp Image 2025-02-16 at 3.29.41 PM.jpeg')"></div>
                 </div>
             </section>
+            
 
             <section class="gallery">
                 <h1>Planos</h1>
                 <div class="gallery-images">
-                    <div class="image" style='background-image: url("IMG/Planos_img/plana36m2_b.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano36m2_c.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano36m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano42m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano45m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano48m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano50m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano54m2_b.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano54m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano65m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano72m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano84m2_b.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano84m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano90m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano120m2.png");'></div>
-                    <div class="image" style='background-image: url("IMG/Planos_img/plano120m2_b.png");'></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plana36m2_b.png");' onclick="openModal('IMG/Planos_img/plana36m2_b.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano36m2_c.png");' onclick="openModal('IMG/Planos_img/plano36m2_c.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano36m2.png");' onclick="openModal('IMG/Planos_img/plano36m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano42m2.png");' onclick="openModal('IMG/Planos_img/plano42m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano45m2.png");' onclick="openModal('IMG/Planos_img/plano45m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano48m2.png");' onclick="openModal('IMG/Planos_img/plano48m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano50m2.png");' onclick="openModal('IMG/Planos_img/plano50m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano54m2_b.png");' onclick="openModal('IMG/Planos_img/plano54m2_b.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano54m2.png");' onclick="openModal('IMG/Planos_img/plano54m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano65m2.png");' onclick="openModal('IMG/Planos_img/plano65m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano72m2.png");' onclick="openModal('IMG/Planos_img/plano72m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano84m2_b.png");' onclick="openModal('IMG/Planos_img/plano84m2_b.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano84m2.png");' onclick="openModal('IMG/Planos_img/plano84m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano90m2.png");' onclick="openModal('IMG/Planos_img/plano90m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano120m2.png");' onclick="openModal('IMG/Planos_img/plano120m2.png')"></div>
+                    <div class="image" style='background-image: url("IMG/Planos_img/plano120m2_b.png");' onclick="openModal('IMG/Planos_img/plano120m2_b.png')"></div>
 
                 </div>
             </section>
@@ -113,5 +121,28 @@
         </p>
     </footer>
 </body>
+
+<script>
+    // Función para abrir el modal
+    function openModal(imageSrc) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+    }
+
+    // Cerrar el modal al hacer clic en la 'X' o fuera de la imagen
+    document.querySelector(".close").onclick = function() {
+        document.getElementById("imageModal").style.display = "none";
+    };
+
+    window.onclick = function(event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+
 
 </html>
