@@ -256,6 +256,58 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Ajuste del tamaño de la imagen en el modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;  /* Ajusta el tamaño de la imagen (antes: 80%) */
+    max-width: 600px;  /* Tamaño máximo de la imagen (antes: 800px) */
+    border-radius: 10px;
+}
+
+/* Botón de cierre del modal */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+/* Animación de apertura del modal */
+.modal-content {
+    animation: zoom 0.3s;
+}
+
+/* Efecto de zoom para la imagen */
+@keyframes zoom {
+    from { transform: scale(0.7); }
+    to { transform: scale(1); }
+}
+
+
 
 
 /* RESPONSIVE DESIGN */
