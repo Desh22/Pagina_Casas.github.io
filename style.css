@@ -137,11 +137,14 @@ nav ul li a:hover {
 /* Misión */
 .Mision h1 {
     font-size: 28px;
+    text-align: center;
 }
 
 .Mision p {
     font-size: 16px;
     color: #414141;
+    text-align: center;
+    font-style: normal;
 }
 
 /* Galería */
