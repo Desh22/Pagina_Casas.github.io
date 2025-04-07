@@ -257,3 +257,74 @@ nav ul li a:hover {
     }
 }
 
+#custom-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#chat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#chat-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Contenedor de las burbujas */
+#social-icons {
+    position: absolute;
+    bottom: 70px; /* Ajusta la distancia hacia arriba */
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Espacio entre burbujas */
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Estilos para cada burbuja */
+.bubble {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.bubble img {
+    width: 30px;
+    height: 30px;
+}
+
+.bubble:hover {
+    transform: scale(1.1);
+}
+
+/* Mostrar las burbujas cuando están activas */
+#social-icons.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#social-icons.active .bubble {
+    opacity: 1;
+    transform: translateY(-10px); /* Ahora aparecen hacia arriba */
+}
+

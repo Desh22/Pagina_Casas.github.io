@@ -6,19 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelos - TuCasaYa</title>
     <link rel="stylesheet" href="modelos.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Start of Async Callbell Code -->
-<script>
-    if (!window.callbellSettings) {
-      window.callbellSettings = {}
-    }
-    window.callbellSettings["token"] = "WzeXC2kaVk6DvYJ4xyjdPr1n";
-  </script>
-  <script>
-    (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
-  </script>
-  <!-- End of Async Callbell Code -->
-  
   
 </head>
 <!-- icono de la pestaña -->
@@ -175,13 +164,32 @@
             </section>
         </main>
     </div>
-        <br><br>
+    <div id="custom-chat">
+        <img src="IMG/Icon-Social-Media/redes-sociales.png" alt="Chat" id="chat-icon">
+        <div id="social-icons">
+            <a href="https://wa.me/56984737571" target="_blank" class="bubble">
+                <img src="IMG/Icon-Social-Media/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.tiktok.com/@tucasaya13" class="bubble">
+                <img src="IMG/Icon-Social-Media/tik-tok.png" alt="tik-tok">
+            </a>
+            <a href="https://www.instagram.com/tucas_aya/" target="_blank">
+                <img class="bubble" src="IMG/Icon-Social-Media/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
     <footer class="footer">
         <p>
             &copy; TuCasaYa | Todos Los Derechos Reservados - Sitio web desarrollado por 
             <span class="dev">DB Soft <img src="IMG/LogoDB Soft.png" alt="Logo DB Soft" class="logo-db"></span>
         </p>
     </footer>
+    <script>
+        document.getElementById("chat-icon").addEventListener("click", function () {
+        let socialIcons = document.getElementById("social-icons");
+        socialIcons.classList.toggle("active");
+    });
+    </script>
 </body>
 
 </html>
