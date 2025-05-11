@@ -109,6 +109,15 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
+.login{
+    padding: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+
+
 .quote-btn:hover {
     background: white;
     color: #ff8c00;
@@ -327,4 +336,7 @@ nav ul li a:hover {
     opacity: 1;
     transform: translateY(-10px); /* Ahora aparecen hacia arriba */
 }
+
+
+
 
