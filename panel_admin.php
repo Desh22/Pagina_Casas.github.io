@@ -13,6 +13,6 @@ if (!isset($_SESSION['usuario'])) {
 <body>
     <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
     <a href="logout.php">Cerrar sesión</a>
-    <!-- Aquí irán los formularios para agregar/eliminar casas -->
+    
 </body>
 </html>
