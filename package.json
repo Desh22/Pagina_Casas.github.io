@@ -1,0 +1,20 @@
+{
+  "name": "pagina_casas.github.io",
+  "version": "1.0.0",
+  "main": "modelos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Desh22/Pagina_Casas.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Desh22/Pagina_Casas.github.io/issues"
+  },
+  "homepage": "https://github.com/Desh22/Pagina_Casas.github.io#readme",
+  "description": ""
+}
