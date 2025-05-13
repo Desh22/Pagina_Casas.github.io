@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,27 @@
     <title>Inicio de sesión</title>
     <link href="Login.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <div class="wrapper"> 
-        <form action="" id="loginForm">
+    <div class="wrapper">
+        <form action="admin/login.php" method="POST" id="loginForm">
             <h1>Login</h1>
             <div class="input-box" id="userInput">
-                <input type="text" placeholder="Usuario"
-                required>
+                <input type="text" name="usuario" placeholder="Usuario" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box" id="passwordInput">
-                <input type="password" placeholder="Contraseña"
-                required>
-                <i class="bx bxs-lock.alt"></i>
+                <input type="password" name="contrasena" placeholder="Contraseña" required>
+                <i class="bx bxs-lock-alt"></i>
             </div>
             <div class="remember-forgot" id="rememberForgot">
                 <label><input type="checkbox">Recordar Usuario</label>
                 <a href="#">Olvide mi Contraseña</a>
             </div>
-            <button type="submit" class="btn" id="loginButton">
-                Ingresar
-            </button>
+            <button type="submit" class="btn" id="loginButton">Ingresar</button>
         </form>
     </div>
     <script src="./JS/login.js"></script>
 </body>
+
 </html>
