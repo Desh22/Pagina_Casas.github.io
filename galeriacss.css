@@ -70,3 +70,43 @@
     opacity: 1;
     transform: translateY(-10px); /* Ahora aparecen hacia arriba */
 }
+
+/* Estilos para las imágenes de la galería */
+.gallery-images .image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Clases específicas para cada imagen */
+.modelo50m2-a { background-image: url("IMG/modelo50m2_a.jpeg"); }
+.constru2 { background-image: url("IMG/casa120m2/constru2.jpeg"); }
+.constru3 { background-image: url("IMG/casa120m2/constru3.jpeg"); }
+.galeria11 { background-image: url("IMG/Galeria/11.jpeg"); }
+.galeria10 { background-image: url("IMG/Galeria/10.jpeg"); }
+.casa120-4 { background-image: url("IMG/casa120m2/4.jpeg"); }
+.galeria7 { background-image: url("IMG/Galeria/7.jpeg"); }
+.casa48-4 { background-image: url("IMG/casa48m2/4.jpeg"); }
+.galeria4 { background-image: url("IMG/Galeria/4.jpeg"); }
+
+/* Clases para los planos */
+.plano36m2-b { background-image: url("IMG/Planos_img/plana36m2_b.png"); }
+.plano36m2-c { background-image: url("IMG/Planos_img/plano36m2_c.png"); }
+.plano36m2 { background-image: url("IMG/Planos_img/plano36m2.png"); }
+.plano42m2 { background-image: url("IMG/Planos_img/plano42m2.png"); }
+.plano45m2 { background-image: url("IMG/Planos_img/plano45m2.png"); }
+.plano48m2 { background-image: url("IMG/Planos_img/plano48m2.png"); }
+.plano50m2 { background-image: url("IMG/Planos_img/plano50m2.png"); }
+.plano54m2-b { background-image: url("IMG/Planos_img/plano54m2_b.png"); }
+.plano54m2 { background-image: url("IMG/Planos_img/plano54m2.png"); }
+.plano65m2 { background-image: url("IMG/Planos_img/plano65m2.png"); }
+.plano72m2 { background-image: url("IMG/Planos_img/plano72m2.png"); }
+.plano84m2-b { background-image: url("IMG/Planos_img/plano84m2_b.png"); }
+.plano84m2 { background-image: url("IMG/Planos_img/plano84m2.png"); }
+.plano90m2 { background-image: url("IMG/Planos_img/plano90m2.png"); }
+.plano120m2 { background-image: url("IMG/Planos_img/plano120m2.png"); }
+.plano120m2-b { background-image: url("IMG/Planos_img/plano120m2_b.png"); }
