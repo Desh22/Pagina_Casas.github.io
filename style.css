@@ -16,14 +16,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    padding: 1rem;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 @media (min-width: 769px) {
@@ -48,24 +46,30 @@ header {
 
 /* Logo */
 .logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
+    flex: 0 0 auto;
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
-    margin-right: 5px;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 
 /* MENU */
-nav ul {
-    list-style: none;
+nav {
     display: flex;
-    gap: 15px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+nav ul li {
     margin: 0;
 }
 
@@ -98,12 +102,13 @@ nav ul li a:hover {
 
 /* BOTÓN contacto */
 .quote-btn {
-    background: #ff8c00;
-    color: white;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
     cursor: pointer;
+    white-space: nowrap;
     font-weight: bold;
     transition: background 0.3s ease;
     margin-left: 20px;
@@ -255,14 +260,26 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
-    .logo img {
-        width: 70px;
-        height: 70px;
+    header {
+        padding: 0.3rem;
     }
 
-    .boton-contacto {
-        font-size: 13px;
-        padding: 6px 12px;
+    .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .quote-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
     }
 }
 
