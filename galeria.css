@@ -31,6 +31,16 @@ header {
     width: 100%;
 }
 
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
 /* MENU */
 nav {
     display: flex;
@@ -350,6 +360,18 @@ nav ul li a:hover {
         z-index: 1000;
         background: white;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: nowrap;
+        padding: 0.5rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
     }
 }
 
